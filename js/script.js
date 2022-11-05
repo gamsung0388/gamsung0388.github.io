@@ -8,10 +8,23 @@ $(function(){
         console.log("chk_leng::::"+chk_leng);
         if(chk_leng>3){
             var checked_val =$(this).is(":checked");
-            return alert("3개 이상 등록할수 없습니다");            
-        }else{
-            localStorage.setItem();
-        }        
+            $(this).prop("checked",false);
+            return alert("3개 이상 등록할수 없습니다"); 
+                      
+        }     
+    });
+    //로컬스트리지 버튼
+    $('#localstBtn').on('click',function(){
+        
+        var chk_vals = $("[name=chk]:checked");
+        
+        console.log("chk_vals: ",chk_vals);
+
+        for(i=0;i<chk_vals.length;i++){
+            var chk_val = chk_vals[i].value;
+            //console.log("chk_val: ",chk_val);
+            localStorage.setItem(i+1,chk_val);
+        }               
     });
 
     //이미지 삭제
