@@ -4,19 +4,40 @@
     <meta charset="UTF-8">
     <script src="../lib/jquery-3.6.0.min.js"></script>
     <script defer src="../js/script.js"></script>
-    <title></title>
+    <title>감성 테스트</title>
 </head>
 <body>
     <div>
-        <input type="checkbox" name="chk" value="1">고객관리</input><br>
+        <i class=""></i>
+        <h1>테스트 제목</h1>
+    </div> 
+    <div>
         
-        <img src="" id="preview">
-
-        <button id="imgBtn">이미지 등록</button>
+        <div>
+            <img id="preview">
+            <img id="temp_img" style="display:none;" />
+            <br>
+            <button id="imgCancle">이미지 삭제<i></i></button>
+            <button id="imgBtn">이미지 등록</button>
+            <button id="cameraBtn">카메라 등록</button>
+        </div>
+        <div>
+            <input type="checkbox" name="chk" value="gwanri">고객관리</input><br>
+            <input type="checkbox" name="chk" value="join">고객등록</input><br>
+            <input type="checkbox" name="chk" value="list">고객목록</input><br>
+            <input type="checkbox" name="chk" value="setting">사용자설정</input><br>
+        </div>
+        <div>
+            <button id="localstBtn">바로가기저장</button>
+        </div>
         <br>
         <br>
         <br>
         <input hidden id="imageFile" type="file" data-width = "300" data-height="300">파일</input><br>
+        <input hidden id="cameraFile" accept="image/*" capture="camera" type="file" data-width = "300" data-height="300">파일</input><br>
     </div>
 </body>
+<footer>
+    
+</footer>
 </html>
