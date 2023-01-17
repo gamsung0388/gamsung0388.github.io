@@ -61,13 +61,13 @@ $(function(){
         img.src = _URL.createObjectURL(file);
         img.onload = function() {    
             console.log("1111");
-            if(img.width != $width || img.height != $height) {
+            //if(img.width != $width || img.height != $height) {
                 alert("이미지 가로 "+ $width +"px, 세로 "+$height+"px로 맞춰서 올려주세요.");
                 $("#imageFile").val("");
                 $('#temp_img').remove();
-            }else{
-                $("#preview").attr("src", _URL.createObjectURL(file))
-            } 
+           //}else{
+           //   $("#preview").attr("src", _URL.createObjectURL(file))
+           // } 
         }
     });
 
