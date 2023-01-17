@@ -90,12 +90,12 @@ $(function(){
         var img = new Image();
         img.src = _URL.createObjectURL(file);
         img.onload = function() {            
-            if(img.width != $width || img.height != $height) {
-                alert("이미지 가로 "+ $width +"px, 세로 "+$height+"px로 맞춰서 올려주세요.");
-                $(this).val("");
-            }else{
-                $("#preview").attr("src", _URL.createObjectURL(file))
-            } 
+            //if(img.width != $width || img.height != $height) {
+                //alert("이미지 가로 "+ $width +"px, 세로 "+$height+"px로 맞춰서 올려주세요.");
+               // $(this).val("");
+            //}else{
+            //    $("#preview").attr("src", _URL.createObjectURL(file))
+            //} 
         }
     });
 
